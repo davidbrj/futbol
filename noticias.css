@@ -1,0 +1,259 @@
+/*ESTILOS DE LETRA*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cabin:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cabin:wght@700&family=Fredoka+One&display=swap");
+/*ESTILO DE BARRA DE NAVEGACION*/
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --marcar: 2px solid;
+}
+nav {
+  position: relative;
+  width: 100%;
+  top: 0;
+  box-shadow: 0px 0px 10px 2px black;
+}
+body {
+  background-color: #b8c6db;
+  background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 74%);
+  border-radius: 16px;
+}
+body::-webkit-scrollbar {
+  width: 16px;
+  border-radius: 16px;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #3f0d12;
+  border-radius: 16px;
+}
+
+.menu {
+  margin: 0;
+  list-style: none;
+  background-color: #045de9;
+  background-image: linear-gradient(-315deg, #045de9 0%, #09c6f9 74%);
+  width: 100%;
+  display: table;
+}
+
+.menu-item {
+  width: 130px;
+  text-align: center;
+  padding: 9px;
+  line-height: 2.1rem;
+  float: left;
+}
+.menu-item:hover {
+  background: rgb(0, 0, 0, 0.2);
+}
+#face::before {
+  content: "";
+  background-image: url(/icons/facebook.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  top: 1.5px;
+}
+#home::before {
+  content: "";
+  background-image: url(/icons/navegador.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  top: 1.5px;
+}
+#ayuda::before {
+  content: "";
+  background-image: url(/icons/informacion.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  top: 1.5px;
+}
+#noticias::before {
+  content: "";
+  background-image: url(/icons/noticias.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  top: 1.5px;
+}
+.content-ball{
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  top: 400px;
+}
+.content-ball > img{
+  width: 100%;
+  height: 100%;
+
+}
+.container-mariquita{
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  right: 0;
+  top: 300px
+}
+.container-mariquita > img {
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 5px;
+  font-family: "Cabin", sans-serif;
+}
+
+/*seccion de nocticias */
+article {
+  /*  outline: var(--marcar) gray;*/
+  display: block;
+  width: 98%;
+  text-align: center;
+  margin-top: 3rem;
+  margin-left: 1%;
+  padding-top: 9px;
+  padding-bottom: 9px;
+}
+article > section {
+  /*  outline: var(--marcar) lime;*/
+  width: 400px;
+  height: 500px;
+  display: inline-block;
+  padding-left: 10px;
+  padding-top: 15px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  margin-right: 50px;
+  position: relative;
+  top: 0;
+}
+.title-noticia {
+  /* outline: var(--marcar) black;*/
+  display: flex;
+  width: 100%;
+  position: absolute;
+  justify-content: center;
+  text-align: center;
+  left: 0;
+  height: 50px;
+  font-size: 40px;
+  font-family: "Cabin", sans-serif;
+  padding-bottom: 7px;
+}
+section > img {
+  /*outline: var(--marcar) blue;*/
+  width: 90%;
+  height: 190px;
+  max-height: 200px;
+  display: block;
+  margin: auto;
+  /**maroon*/
+  box-shadow: 1px 1px 11px 2px black;
+  margin-bottom: 15px;
+  margin-top: 75px;
+  border-radius: 10px;
+}
+section > p {
+  /* outline: var(--marcar) red;*/
+  text-align: center;
+  background-color: #f5f7fa;
+  box-shadow: 0 0 0 3px white, 1px 1px 11px 3px black;
+  padding-top: 5px;
+  padding-left: 9px;
+  padding-right: 9px;
+  position: relative;
+  top: 30px;
+  font-family: "Roboto Slab", serif;
+  font-size: 14px;
+  width: 100%;
+  height: 130px;
+  overflow: auto;
+  border-radius: 10px;
+}
+section > p::-webkit-scrollbar {
+  width: 7px;
+  background: #444;
+  border-radius: 9px;
+}
+section > p::-webkit-scrollbar-thumb {
+  background-color: gray;
+  border-radius: 9px;
+}
+p > span {
+  display: block;
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  *,
+  ::before,
+  ::after {
+    box-sizing: border-box;
+    margin-right: 0;
+    padding-left: 0;
+  }
+
+  nav {
+    display: block;
+    width: 100vw;
+    margin-left: 1.5px;
+  }
+  .menu {
+    height: 155px;
+    display: block;
+    width: 100vw;
+    text-align: center;
+    background-color: maroon;
+  }
+  .menu-item {
+    /*outline: var(--marcar) white;*/
+    margin-left: 15px;
+    display: inline-block;
+    width: 150px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-bottom: 3px solid black;
+    border-top: 3px solid maroon;
+    border-radius: 15px;
+  }
+  article {
+    display: block;
+    width: 100vw;
+    padding: 9px;
+  }
+  article > section {
+    width: 100%;
+    margin: 0;
+  }
+  article > section > p {
+    background: white;
+  }
+}
